@@ -1871,11 +1871,84 @@ input[type="search"]::placeholder {
 
 .text-up-footer {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 24px;
   color: var(--basic-black);
   grid-column: 1/-1;
   grid-row: 5;
   margin-top: 122px;
+  font-family: ptsans;
+}
+
+.text-up-footer h2 {
+  color: var(--basic-black);
+  font-family: cuprum;
+}
+
+/*modal basket*/
+
+.modal-basket {
+  width: 620px;
+  height: 282px;
+  border: 7px solid var(--basic-red);
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  grid-template-rows: min-content 1fr 1fr;
+  gap: 10px;
+  position: relative;
+  display: none;
+}
+
+.modal-basket .icon-close {
+  grid-column: 4;
+  grid-row: 1;
+  margin: 10px 10px 0 0;
+}
+
+.modal-basket p {
+  grid-column: 1/-1;
+  grid-row: 2;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.modal-basket p::before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icon/icon-mark.svg);
+  position: absolute;
+  left: 60px;
+  top: 50px;
+}
+
+.button-modal-basket {
+  grid-column: 1/-1;
+  grid-row: 3;
+  text-align: center;
+  align-self: center;
+}
+
+.button-modal-basket button {
+  height: 38px;
+  width: 192px;
+}
+
+.button-next-offer,
+.button-next-offer:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.button-next-offer:hover {
+  border: 1px solid var(--basic-grey);
+}
+
+.button-next-offer:active {
+  border: 1px solid var(--basic-grey);
+  background-color: var(--basic-grey);
 }
 
 .display-none {
