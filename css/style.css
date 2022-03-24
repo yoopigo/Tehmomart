@@ -17,22 +17,6 @@
 }
 
 @font-face {
-  font-family: "ptsans";
-  src: url(../fonts/ptsans.woff2) format("woff2"),
-    url(../fonts/ptsans.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ptsans";
-  src: url(../fonts/ptsansbold.woff2) format(woff2),
-    url("../fonts/ptsansbold.woff") format(woff);
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "cuprum";
   src: url(../fonts/cuprumitalic.woff2) format(woff2),
     url("../fonts/cuprumitalic.woff") format(woff);
@@ -46,6 +30,22 @@
     url("../fonts/cuprumbolditalic.woff") format(woff);
   font-weight: 700;
   font-style: italic;
+}
+
+@font-face {
+  font-family: "ptsans";
+  src: url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ptsans";
+  src: url(../fonts/ptsansbold.woff2) format(woff2),
+    url("../fonts/ptsansbold.woff") format(woff);
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*Variables*/
@@ -67,7 +67,6 @@
   --basic-grey: #A9A9A9;
   --basic-gold: #FFD180;
   --shadow: #405069;
-
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-violet: #DC91D8;
@@ -188,6 +187,7 @@ img {
 .main-header-up-container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .main-logo {
@@ -245,6 +245,10 @@ input[type="search"]::placeholder {
   opacity: 1;
 }
 
+.main-header-up-menu {
+  display: flex;
+}
+
 .bookmarks,
 .basket {
   width: 150px;
@@ -252,18 +256,6 @@ input[type="search"]::placeholder {
   color: var(--basic-white);
   background-color: var(--basic-blue-dark);
   border: 0px;
-}
-
-.basket {
-  background-color: var(--basic-red);
-}
-
-.basket:active {
-  background-color: var(--red-click);
-}
-
-.bookmarks:active {
-  background-color: var(--button-acive);
 }
 
 .bookmarks::before,
@@ -277,6 +269,18 @@ input[type="search"]::placeholder {
   right: 10px;
   top: 2px;
   opacity: 0.3;
+}
+
+.basket {
+  background-color: var(--basic-red);
+}
+
+.basket:active {
+  background-color: var(--red-click);
+}
+
+.bookmarks:active {
+  background-color: var(--button-acive);
 }
 
 .basket::before {
@@ -495,8 +499,8 @@ input[type="search"]::placeholder {
   font-size: 21px;
   line-height: 21px;
   border: 0px;
-  height: 45px;
-  justify-content: end;
+  min-height: 45px;
+  overflow: hidden;
 }
 
 .button-login {
@@ -537,15 +541,12 @@ input[type="search"]::placeholder {
 
 .main-navigation {
   font-size: 18px;
-  background-color: var(--basic-white);
   width: 100%;
 }
 
 .navigation-list {
   list-style: none;
-  padding: 0px;
   display: flex;
-  min-height: 60px;
   flex-wrap: wrap;
   background-color: var(--basic-blue);
   box-shadow: inset 0px -5px 0px #293449;
@@ -553,7 +554,6 @@ input[type="search"]::placeholder {
 
 .navigation-item {
   flex-grow: 1;
-  align-self: center;
 }
 
 .navigation-item a {
@@ -579,7 +579,7 @@ input[type="search"]::placeholder {
 }
 
 /*Main*/
-/*5 blocks and slider*/
+/*blocks and slider*/
 
 .main-products-containter {
   margin-top: 120px;
@@ -595,6 +595,16 @@ input[type="search"]::placeholder {
   position: relative;
 }
 
+.main-products-card h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+  padding-left: 23px;
+  max-width: 200px;
+  max-height: 30px;
+  overflow: hidden;
+}
+
 .main-products-card::before {
   content: "";
   display: block;
@@ -602,13 +612,6 @@ input[type="search"]::placeholder {
   height: 71px;
   position: absolute;
   background-repeat: no-repeat;
-}
-
-.main-products-card h3 {
-  font-size: 24px;
-  line-height: 30px;
-  color: var(--basic-white);
-  padding-left: 23px;
 }
 
 .main-products-card-one {
@@ -795,6 +798,7 @@ input[type="search"]::placeholder {
   height: 170px;
   width: 220px;
   vertical-align: middle;
+  object-fit: cover;
 }
 
 .popular-goods p {
@@ -858,14 +862,12 @@ input[type="search"]::placeholder {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin-top: 50px;
 }
 
 .popular-manufacturers-item {
   display: flex;
-  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -873,10 +875,7 @@ input[type="search"]::placeholder {
 .button-manufacturers {
   width: 192px;
   height: 38px;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
   text-align: center;
   padding-top: 11px;
 }
@@ -889,6 +888,7 @@ input[type="search"]::placeholder {
 .popular-manufacturers-img {
   max-width: 220px;
   max-height: 145px;
+  object-fit: cover;
 }
 
 .popular-manufacturers-img:focus,
@@ -897,6 +897,7 @@ input[type="search"]::placeholder {
 }
 
 /*Service*/
+
 .service-grid {
   margin-top: 130px;
   display: grid;
@@ -906,16 +907,7 @@ input[type="search"]::placeholder {
 }
 
 .service-title {
-  grid-column: 1/-1;
-  grid-row: 1;
-  margin: 0;
   color: var(--basic-black);
-}
-
-.service-slider {
-  grid-column: 2/-1;
-  grid-row: 3;
-  justify-self: start;
 }
 
 .little-text-two {
@@ -924,7 +916,6 @@ input[type="search"]::placeholder {
 
 .little-text-service {
   grid-column: 1/-1;
-  grid-row: 2;
 }
 
 .service-buttons {
@@ -969,6 +960,8 @@ input[type="search"]::placeholder {
 }
 
 .service-slider {
+  grid-column: 2/-1;
+  grid-row: 3;
   position: relative;
 }
 
@@ -1034,7 +1027,7 @@ input[type="search"]::placeholder {
   display: none;
 }
 
-.service-slide-current {
+.current {
   display: block;
 }
 
@@ -1062,6 +1055,10 @@ input[type="search"]::placeholder {
 
 .contact-main-contacts {
   margin-bottom: 24px;
+}
+
+.contact-main .little-text {
+  margin-bottom: 32px;
 }
 
 .delivery-list {
@@ -1105,9 +1102,6 @@ input[type="search"]::placeholder {
   background-color: var(--red-click);
 }
 
-.contact-main .little-text {
-  margin-bottom: 32px;
-}
 
 /*Footer*/
 /*Footer-up*/
@@ -1127,12 +1121,6 @@ input[type="search"]::placeholder {
   min-height: 193px;
 }
 
-.footer-contacts {
-  grid-column: 1;
-  grid-row: 2;
-  padding-top: 14px;
-}
-
 .footer-logo {
   width: 220px;
   height: 68px;
@@ -1144,6 +1132,13 @@ input[type="search"]::placeholder {
 
 .footer-logo:active {
   background-color: var(--red-click);
+}
+
+.footer-contacts {
+  grid-column: 1;
+  grid-row: 2;
+  padding-top: 14px;
+  max-width: 335px;
 }
 
 .footer-adres,
@@ -1165,6 +1160,10 @@ input[type="search"]::placeholder {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 58px;
   margin: 37px 0 0 0;
+}
+
+.footer-menu-list li {
+  min-height: 30px;
 }
 
 .footer-catalog-list {
@@ -1215,13 +1214,13 @@ input[type="search"]::placeholder {
 
 .copyright {
   justify-self: start;
-  align-self: center;
 }
 
 .social {
   height: 100%;
   width: 300px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -1266,6 +1265,7 @@ input[type="search"]::placeholder {
 .feedback {
   display: flex;
   text-align: right;
+  flex-wrap: wrap;
 }
 
 .footer-feedback {
@@ -1298,7 +1298,6 @@ input[type="search"]::placeholder {
 
 /*modal-feedback*/
 
-
 .modal-feedback-form {
   width: 620px;
   height: 430px;
@@ -1307,11 +1306,16 @@ input[type="search"]::placeholder {
   grid-template-columns: 1fr 1fr min-content;
   grid-template-rows: min-content 1fr 1fr 1fr;
   gap: 20px;
-  position: absolute;
   background-color: var(--basic-white);
   z-index: 3;
-  left: 635px;
-  top: 2330px;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button-close {
@@ -1319,7 +1323,8 @@ input[type="search"]::placeholder {
   grid-row: 1;
   width: 24px;
   height: 24px;
-  margin-top: 14px;
+  margin: 14px 11px 0 0;
+
 }
 
 .modal-login {
@@ -1382,26 +1387,27 @@ input[type="search"]::placeholder {
   margin-bottom: 10px;
 }
 
-/*catalog*/
-
 /*Modal map*/
 .modal-map {
   height: 450px;
-  width: 943;
+  width: 943px;
   border-top: 7px solid var(--basic-red);
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  position: relative;
-  bottom: 770px;
-  right: 20px;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button-close-map {
   grid-column: 1;
   grid-row: 1;
-  z-index: 2;
   width: 21px;
   height: 21px;
   justify-self: end;
@@ -1895,7 +1901,6 @@ input[type="search"]::placeholder {
   grid-template-rows: min-content 1fr 1fr;
   gap: 10px;
   position: relative;
-  display: none;
 }
 
 .modal-basket .icon-close {

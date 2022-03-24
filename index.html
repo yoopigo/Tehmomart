@@ -52,8 +52,8 @@
           <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div class="main-header-down-button">
-          <button class="button-login" type="button">Войти</button>
-          <button class="button-regestration" type="button">Регистрация</button>
+          <button class="button-login" type="button">Войти</button><button class="button-regestration"
+            type="button">Регистрация</button>
         </div>
       </div>
     </section>
@@ -72,8 +72,8 @@
     </nav>
   </header>
 
-  <!--Мейн-->
-  <!--5 blocks and slider-->
+  <!--Main-->
+  <!--blocks and slider-->
   <main>
     <section class="main-products container">
       <div class="main-products-containter container">
@@ -229,16 +229,16 @@
       <p class="little-text little-text-service">Хороший интернет-магазин отличается от плохого не только ценами!
         <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
+
       <!--Slider-->
       <div class="service-buttons">
         <button class="service-button" type="button">Доставка</button>
         <button class="service-button" type="button">Гарантия</button>
         <button class="service-button" type="button">Кредит</button>
       </div>
-
       <div class="service-slider">
         <ul class="service-slider-list">
-          <li class="service-slider-item service-slider-item-one service-slide-current">
+          <li class="service-slider-item service-slider-item-one current">
             <h3 class="service-slide-title">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо
               заработаем, <br>поднимая его на ваш этаж!</p>
@@ -260,6 +260,7 @@
 
     <!--Contacts-->
     <section class="delivery container">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contact-delivery">
         <h2 class="big-title">Компания «Техномарт»</h2>
         <p class="little-text little-text-one">
@@ -286,7 +287,7 @@
           заехав в наш офис:
         </p>
         <a href="">
-          <img src="/img/map.png" width="300" height="158" alt="map" /></a>
+          <img src="img/map.png" width="300" height="158" alt="map" /></a>
         <button class="button-usual button" type="button">Заблудились? Напишите нам</button>
       </div>
     </section>
@@ -368,18 +369,21 @@
           placeholder="В свободной форме"></textarea>
       </div>
       <button class="button button-modal-feedback" type="submit">Отправить</button>
-      <a class="button-close" href="">
-        <img class="icon-close" src="/img/icon/icon-close.svg" width="21px" height="21px" />
-      </a>
+
     </form>
   </section>
 
   <!--map-->
-  <section class="modal modal-map container display-none">
-    <a class="button-close-map" href="">
-      <img class="icon-close" src="/img/icon/icon-close.svg" width="21px" height="21px" />
-    </a>
-    <img class="map-img" src="img/map.png" width="944" height="449" alt="map" />
+  <section class="container display-none">
+    <div class="modal-map">
+      <a class="button-close-map" href="">
+        <img class="icon-close" src="/img/icon/icon-close.svg" width="21px" height="21px" />
+      </a>
+      <iframe class="map-img "
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556365!2d30.315220216162075!3d59.968268666669964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1648146772000!5m2!1sru!2sru"
+        width="943" height="449" style="border:0;" allowfullscreen="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </section>
 </body>
 
