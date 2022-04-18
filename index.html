@@ -77,11 +77,12 @@
   <!--blocks and slider-->
   <main>
     <section class="main-products container">
+      <h1 class="visually-hidden">Преимущества</h1>
       <div class="main-products-containter container">
         <div class="main-products-card main-products-card-one">
           <h3>Материалы</h3>
           <a class="button-cart" href="#">На любой вкус</a>
-          <div aria-hidden="true" focusable="false" class="icon-new">New</div>
+          <div aria-hidden="true" focusable="false" class="icon-new-product">New</div>
         </div>
         <div class="main-products-card main-products-card-two">
           <h3>Инструмент</h3>
@@ -99,13 +100,30 @@
           <h3>Доставка</h3>
           <a class="button-cart" href="#">Бесплатно</a>
         </div>
-        <!--Slider-->
-        <div class="main-slider">
-          <img src="img/slider/slide1.jpg" width="630" height="266" alt="" />
-        </div>
-      </div>
-    </section>
 
+        <!--Slider-->
+        <div class="slider-container">
+          <div class="main-slider">
+            <div class="item-slide slide-one">
+              <p class="slide-text slide-title">Перфораторы</p>
+              <p class="slide-text slide-description">Настоящие мужские игрушки</p>
+              <img src="img/slider/slide1.jpg" width="630" height="266" alt="" />
+            </div>
+            <div class="item-slide slide-two">
+              <p class="slide-text slide-title">Дрели</p>
+              <p class="slide-text slide-description">Соседям на радость!</p>
+              <img src="img/slider/slide2.jpg" width="630" height="266" alt="" />
+            </div>
+          </div>
+          <a class="next-slider" href=""></a>
+          <a class="back-slider" href=""></a>
+          <a href="catalog.html" class="button button-slider">Открыть каталог</a>
+          <ul class="list-dots">
+            <li><button class="item-dots item-dots-one background-dots"></button></li>
+            <li><button class="item-dots item-dots-two"></button></li>
+          </ul>
+        </div>
+    </section>
 
     <!--Popular goods-->
     <section class="popular-goods container">
@@ -117,7 +135,11 @@
         <ul class="popular-goods-list">
           <li class="popular-goods-item popular-goods-item-one">
             <div class="image-central">
-              <img src="img/popular-goods/popular-goods-1.jpg" width="" height="" alt="Перфоратор BOSH BFG 90-0" />
+              <img src="img/popular-goods/popular-goods-1.jpg" width="184" height="164"
+                alt="Перфоратор BOSH BFG 90-0" />
+              <button index="1" class="button button-add-goods">Купить</button>
+              <button class="button button-add-bookmarks">В закладки</button>
+              <div class="background-goods"></div>
             </div>
             <p class="name-good">Перфоратор BOSH BFG 9000</p>
             <p class="old-price">32500 Р.</p>
@@ -126,7 +148,11 @@
 
           <li class="popular-goods-item popular-goods-two">
             <div class="image-central">
-              <img src="img/popular-goods/popular-goods-2.jpg" width="" height="" alt="Перфоратор BOSH BFG 3000" />
+              <img src="img/popular-goods/popular-goods-2.jpg" width="127" height="122"
+                alt="Перфоратор BOSH BFG 3000" />
+              <button class="button button-add-goods">Купить</button>
+              <button class="button button-add-bookmarks">В закладки</button>
+              <div class="background-goods"></div>
             </div>
             <p class="name-good">Перфоратор BOSH BFG 3000</p>
             <p class="old-price">22500 Р.</p>
@@ -136,7 +162,11 @@
 
           <li class="popular-goods-item popular-goods-three">
             <div class="image-central">
-              <img src="img/popular-goods/popular-goods-3.jpg" width="" height="" alt="Перфоратор BOSH BFG 6000" />
+              <img src="img/popular-goods/popular-goods-3.jpg" width="144" height="128"
+                alt="Перфоратор BOSH BFG 6000" />
+              <button class="button button-add-goods">Купить</button>
+              <button class="button button-add-bookmarks">В закладки</button>
+              <div class="background-goods"></div>
             </div>
             <p class="name-good">Перфоратор BOSH BFG 6000</p>
             <p class="old-price">30500 Р.</p>
@@ -145,7 +175,11 @@
 
           <li class="popular-goods-item popular-goods-four">
             <div class="image-central">
-              <img src="img/popular-goods/popular-goods-4.jpg" width="" height="" alt="Перфоратор BOSH BFG 2000" />
+              <img src="img/popular-goods/popular-goods-4.jpg" width="127" height="112"
+                alt="Перфоратор BOSH BFG 2000" />
+              <button class="button button-add-goods">Купить</button>
+              <button class="button button-add-bookmarks">В закладки</button>
+              <div class="background-goods"></div>
             </div>
             <p class="name-good">Перфоратор BOSH BFG 2000</p>
             <p class="old-price">&nbsp;</p>
@@ -168,56 +202,56 @@
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-1.png"
-                width="" height="" alt="Bosh" />
+                width="126" height="37" alt="Bosh" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-2.png"
-                max-width="220px" max-height="145px" alt="makita" />
+                max-width="123" max-height="40" alt="makita" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-3.png"
-                max-width="220px" max-height="145px" alt="devalt" />
+                max-width="146" max-height="44" alt="devalt" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-4.png"
-                max-width="220px" max-height="145px" alt="Интерскол" />
+                max-width="200" max-height="75" alt="Интерскол" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-5.png"
-                max-width="220px" max-height="145px" alt="hitachi" />
+                max-width="169" max-height="31" alt="hitachi" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-6.png"
-                max-width="220px" max-height="145px" alt="lg" />
+                max-width="121" max-height="73" alt="lg" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-7.png"
-                max-width="220px" max-height="145px" alt="aeg" />
+                max-width="151" max-height="96" alt="aeg" />
             </a>
           </li>
 
           <li class="popular-manufacturers-item">
             <a href="">
               <img class="popular-manufacturers-img" src="img/popular-manufacturers/popular-manufacturers-8.png"
-                max-width="220px" max-height="145px" alt="metabo" />
+                max-width="204" max-height="69" alt="metabo" />
             </a>
           </li>
 
@@ -234,9 +268,9 @@
 
       <!--Slider-->
       <div class="service-buttons">
-        <button class="service-button" type="button">Доставка</button>
-        <button class="service-button" type="button">Гарантия</button>
-        <button class="service-button" type="button">Кредит</button>
+        <button class="service-button service-button-delivery" type="button">Доставка</button>
+        <button class="service-button service-button-warranty" type="button">Гарантия</button>
+        <button class="service-button service-button-credit" type="button">Кредит</button>
       </div>
       <div class="service-slider">
         <ul class="service-slider-list">
@@ -280,7 +314,7 @@
           <li class="delivery-item">Автотрейдинг</li>
           <li class="delivery-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button button-contacts" href="#">Подробнее о компании</a>
+        <a class="button button-contacts" href="blank.html">Подробнее о компании</a>
       </div>
       <div class="contact-main">
         <h2 class="big-title contact-main-contacts">Контакты</h2>
@@ -288,7 +322,7 @@
           Вы можете забрать товар сами,<br />
           заехав в наш офис:
         </p>
-        <a href="#" alt="Карта" aria-hidden="true" focusable="false">
+        <a class="min-map" href="#" alt="Карта" aria-hidden="true" focusable="false">
           <img aria-hidden="true" focusable="false" src="img/map.png" width="300" height="158" alt="map" /></a>
         <button class="button-usual button" type="button">Заблудились? Напишите нам</button>
       </div>
@@ -357,7 +391,7 @@
   <section class="modal modal-feedback container display-none">
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <button aria-labe="Закрыть окно" class="button-close button-close-feedback" href="">
-        <img class="icon-close" src="/img/icon/icon-close.svg" width="21px" height="21px" />
+        <img class="icon-close" src="img/icon/icon-close.svg" width="21" height="21" />
       </button>
       <div class="modal-login">
         <label for="name">Ваше имя</label><br>
@@ -378,10 +412,10 @@
   </section>
 
   <!--map-->
-  <section class="container display-none">
-    <div class="modal-map">
+  <section class="container modal-map display-none">
+    <div class="modal-map-form">
       <button aria-labe="Закрыть окно" class="button-close-map" href="">
-        <img class="icon-close" src="/img/icon/icon-close.svg" width="21px" height="21px" />
+        <img class="icon-close" src="img/icon/icon-close.svg" width="21" height="21" />
       </button>
       <iframe class="map-img "
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556365!2d30.315220216162075!3d59.968268666669964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1648146772000!5m2!1sru!2sru"
@@ -390,7 +424,22 @@
     </div>
   </section>
 
-  <script src="/js/Script.js"></script>
+  <!--modal basket-->
+
+  <form class="modul container modal-basket display-none">
+    <p>Товар добавлен в корзину</p>
+    <div class="button-modal-basket">
+      <button class="button" type="button">Оформить заказ</button>
+      <button class="button-next-offer" type="button">
+        Продолжить покупки
+      </button>
+    </div>
+    <a class="icon-close" href="">
+      <img src="/img/icon/icon-close.svg" width="21" height="21" />
+    </a>
+  </form>
+
+  <script src="js/Script.js"></script>
 </body>
 
 </html>
