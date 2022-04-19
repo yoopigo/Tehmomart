@@ -2100,6 +2100,10 @@ input[type="search"]::placeholder {
   margin-top: 30px;
 }
 
+.pagination-item-first {
+  color: var(--basic-white);
+}
+
 .pagination-item {
   height: 38px;
   width: 38px;
@@ -2140,6 +2144,10 @@ input[type="search"]::placeholder {
 
 .pagination li:active {
   border: 1px solid #EE3643;
+}
+
+.pagination-item-first a:visited {
+  color: var(--basic-white);
 }
 
 /*text block*/
