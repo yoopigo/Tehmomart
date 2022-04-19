@@ -347,7 +347,7 @@ input[type="search"]::placeholder {
   color: var(--basic-red);
   align-self: center;
   padding-left: 30px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 23px;
   font-style: italic;
   font-weight: normal;
@@ -361,6 +361,9 @@ input[type="search"]::placeholder {
 .header-contacts {
   align-self: center;
   text-align: center;
+  position: relative;
+  top: 15px;
+  right: 10px;
 }
 
 .header-phone {
@@ -389,6 +392,9 @@ input[type="search"]::placeholder {
 .main-header-down-button {
   align-self: center;
   justify-self: end;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
 }
 
 /*Catalog login*/
@@ -411,6 +417,9 @@ input[type="search"]::placeholder {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  position: relative;
+  top: 15px;
+  right: 5px;
 }
 
 .login-name::before {
@@ -457,7 +466,7 @@ input[type="search"]::placeholder {
 
 .name-icon {
   position: relative;
-  top: 2px;
+  top: 15px;
   right: 20px;
 }
 
@@ -476,13 +485,16 @@ input[type="search"]::placeholder {
   grid-column: 1;
   grid-row: 2;
   max-width: 105px;
-
+  position: relative;
+  top: 20px;
 }
 
 .main-header-down-button-catalog-link-two {
   grid-column: 2;
   grid-row: 2;
   position: relative;
+  top: 20px;
+  right: 15px;
 }
 
 .main-header-down-button-catalog-link {
@@ -520,6 +532,10 @@ input[type="search"]::placeholder {
   min-height: 45px;
   overflow: hidden;
   cursor: pointer;
+}
+
+.button-regestration {
+  padding-left: 20px;
 }
 
 .button-login {
@@ -615,7 +631,6 @@ input[type="search"]::placeholder {
 
 .main-products-card h3 {
   font-size: 24px;
-  line-height: 30px;
   color: var(--basic-white);
   padding-left: 23px;
   max-width: 200px;
@@ -800,13 +815,16 @@ input[type="search"]::placeholder {
 .slide-title {
   font-size: 36px;
   line-height: 36px;
-  bottom: 180px
+  bottom: 180px;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
 }
 
 .slide-description {
   font-size: 18px;
   line-height: 24px;
   bottom: 170px;
+  margin: 0 0 10px 0;
 }
 
 .next-slider {
@@ -833,7 +851,7 @@ input[type="search"]::placeholder {
   height: 38px;
   position: absolute;
   bottom: 27px;
-  left: 50px;
+  left: 25px;
   text-align: center;
   padding-top: 6px;
 }
@@ -896,6 +914,7 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
   text-align: center;
   padding-top: 11px;
+  margin-right: 15px;
 }
 
 .popular-goods-list {
@@ -916,6 +935,7 @@ input[type="search"]::placeholder {
   font-size: 18px;
   line-height: 20px;
   color: var(--basic-black);
+  margin-top: 83px;
 }
 
 .popular-goods-item {
@@ -948,7 +968,7 @@ input[type="search"]::placeholder {
 .catalog-goods-item .name-good {
   font-size: 18px;
   line-height: 20px;
-  margin: 7px 16px 7px 16px;
+  margin: -10px 15px 7px 16px;
 }
 
 .old-price {
@@ -1047,7 +1067,7 @@ input[type="search"]::placeholder {
 /*Popular-manufacturers*/
 
 .popular-manufacturers {
-  margin-top: 70px;
+  margin-top: 90px;
   padding: 0;
 }
 
@@ -1087,6 +1107,7 @@ input[type="search"]::placeholder {
   line-height: 18px;
   text-align: center;
   padding-top: 11px;
+  margin-right: 15px;
 }
 
 .popular-manufacturers-img {
@@ -1116,11 +1137,13 @@ input[type="search"]::placeholder {
 }
 
 .little-text-two {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .little-text-service {
   grid-column: 1/-1;
+  position: relative;
+  bottom: 20px;
 }
 
 .service-buttons {
@@ -1128,6 +1151,7 @@ input[type="search"]::placeholder {
   flex-direction: column;
   grid-column: 1;
   grid-row: 3;
+  margin-top: 10px;
 }
 
 .service-button {
@@ -1189,6 +1213,7 @@ input[type="search"]::placeholder {
   line-height: 30px;
   color: var(--basic-blue);
   text-transform: uppercase;
+  padding-top: 5px;
 }
 
 .service-slide-button {
@@ -1210,8 +1235,8 @@ input[type="search"]::placeholder {
 
 .service-slider-item-one::after {
   background-image: url("../img/slider/service-slide-1.png");
-  top: 0px;
-  left: 195px;
+  top: 25px;
+  left: 187px;
 }
 
 .service-slider-item-two::after {
@@ -1241,7 +1266,7 @@ input[type="search"]::placeholder {
   display: grid;
   grid-template-columns: max-content 1fr 300px;
   column-gap: 20px;
-  margin-top: 170px;
+  margin-top: 130px;
 }
 
 .contact-main {
@@ -1273,6 +1298,10 @@ input[type="search"]::placeholder {
   margin: 0 0 20px 0;
 }
 
+.delivery-item {
+  margin-bottom: 10px;
+}
+
 .delivery-item::before {
   content: "";
   display: block;
@@ -1290,12 +1319,14 @@ input[type="search"]::placeholder {
   height: 38px;
   text-align: center;
   padding-top: 7px;
+  font-size: 14px;
 }
 
 .button-usual {
   width: 300px;
   height: 38px;
-  margin-top: 15px;
+  margin-top: 28px;
+  font-size: 14px;
 }
 
 .button-usual:hover {
@@ -1671,16 +1702,16 @@ input[type="search"]::placeholder {
 
 .bread-crumbs {
   grid-column: 1/3;
+  position: relative;
+  top: 12px;
 }
 
 .bread-crumbs-list {
   list-style: none;
   line-height: 18px;
   color: var(--basic-black);
-  grid-column: 1/3;
-  grid-row: 1;
   display: flex;
-  margin: 80px 0 0 0;
+  margin: 45px 0 0 0;
   padding: 0;
   text-transform: uppercase;
   position: relative;
@@ -1688,7 +1719,9 @@ input[type="search"]::placeholder {
 }
 
 .bread-crumbs-item {
-  margin-left: 42px;
+  margin-left: 53px;
+  font-family: ptsans;
+  margin: 12px 0 0 47px;
 }
 
 .bread-crumbs-item a:hover,
@@ -1737,6 +1770,7 @@ input[type="search"]::placeholder {
   color: var(--basic-black);
   margin: 0;
   font-family: ptsans;
+  padding-left: 15px;
 }
 
 .filter-list legend {
@@ -1757,6 +1791,7 @@ input[type="search"]::placeholder {
   position: relative;
   cursor: pointer;
   display: block;
+  font-family: ptsans;
 }
 
 .filter-form {
@@ -1767,11 +1802,18 @@ input[type="search"]::placeholder {
   list-style: none;
 }
 
+.filter-list-two ul {
+  margin-top: 26px;
+}
+
 .filter-list {
-  margin: 0;
   padding: 0;
   border: none;
-  margin-top: 35px;
+  margin: 15px 0 0 0;
+}
+
+.filter-list-two {
+  margin-top: 26px;
 }
 
 .filter-list:first-child {
@@ -1835,13 +1877,17 @@ input[type="search"]::placeholder {
 .price-control {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 30px;
 }
 
-.filter-form li {
+.filter-form {
   text-transform: uppercase;
   font-size: 15px;
   line-height: 19px;
   color: var(--basic-black);
+  margin-bottom: 21px;
+  margin-left: -5px;
 }
 
 .filter-item:not(:disabled):not(:checked)+label::before {
@@ -1894,6 +1940,7 @@ input[type="search"]::placeholder {
   border: 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .button-filters:hover {
@@ -1961,6 +2008,12 @@ input[type="search"]::placeholder {
   margin-right: 20px;
 }
 
+.sorting-down,
+.sorting-up {
+  position: relative;
+  right: 17px;
+}
+
 .sorting-up a,
 .sorting-down a {
   opacity: 1;
@@ -1985,6 +2038,8 @@ input[type="search"]::placeholder {
 .catalog-goods {
   grid-column: 2;
   grid-row: 4;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .catalog-goods ul {
@@ -2042,7 +2097,7 @@ input[type="search"]::placeholder {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 48px;
+  margin-top: 30px;
 }
 
 .pagination-item {
@@ -2052,6 +2107,8 @@ input[type="search"]::placeholder {
   padding-top: 10px;
   margin-right: 10px;
   color: var(--basic-black);
+  font-family: ptsans;
+  text-transform: uppercase;
 }
 
 .pagination-item:first-child {
@@ -2098,6 +2155,10 @@ input[type="search"]::placeholder {
 .text-up-footer h2 {
   color: var(--basic-black);
   font-family: cuprum;
+}
+
+.text-up-footer p {
+  margin: 25px 0 0 0;
 }
 
 /*modal basket*/
